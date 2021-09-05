@@ -69,7 +69,7 @@ sudo a2enmod rewrite
 sudo service apache2 restart
 ```
 
-* Directory root should be pointed to `public` directory. For example, you can edit the default virtual hosts
+* Directory root should be pointed to `public` directory. For example, you can edit a default virtual host file
   that provided on Ubuntu/Debian:
 
 ```shell
@@ -128,7 +128,7 @@ APP_DEBUG=false
   * `php artisan optimize`
 
 * Change directory permissions (only Linux):
-  * Only Linux: `chmod -R 777 storage bootstrap/cache public/uploads`
+  * `chmod -R 777 storage bootstrap/cache public/uploads`
 
 * Install npm packages:
   * `npm install`
@@ -147,7 +147,7 @@ APP_DEBUG=false
   * Windows: `cd C:\wamp64\www`
 
 * Clone MiniImg repository:
-  * `clone https://github.com/lindevs/mini-img.git`
+  * `git clone https://github.com/lindevs/mini-img.git .`
 
 * Install composer packages:
   * `composer install`
