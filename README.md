@@ -62,13 +62,6 @@ post_max_size = 40M
 
 ### Configure Apache
 
-* A `mod_rewrite` module should be enabled for Apache. On Ubuntu/Debian, run the following commands:
-
-```shell
-sudo a2enmod rewrite
-sudo service apache2 restart
-```
-
 * Directory root should be pointed to `public` directory. For example, you can edit a default virtual host file
   that provided on Ubuntu/Debian:
 
@@ -92,6 +85,13 @@ Example of configuration file:
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
+
+* A `mod_rewrite` module should be enabled for Apache. On Ubuntu/Debian, run the following commands:
+
+```shell
+sudo a2enmod rewrite
+sudo service apache2 restart
 ```
 
 # Install MiniImg
@@ -151,6 +151,16 @@ APP_DEBUG=false
 
 * Install composer packages:
   * `composer install`
+
+* Copy `.env.example` file to `.env`:
+  * Linux: `cp .env.example .env`
+  * Windows: `copy .env.example .env`
+
+* Generate application key:
+  * `php artisan key:generate`
+
+* Change directory permissions (only Linux):
+  * `chmod -R 777 storage bootstrap/cache public/uploads`
 
 * Install npm packages:
   * `npm install`
