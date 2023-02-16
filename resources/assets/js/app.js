@@ -1,6 +1,5 @@
-require('bootstrap');
-require('dropzone');
-const fileSize = require('filesize');
+import 'dropzone';
+import { filesize } from  'filesize';
 
 const uploadForm = document.getElementById('upload-form');
 const filesTable = document.getElementById('files-table');
@@ -79,5 +78,5 @@ dropzone.on('error', (file, errorMessage, xhr) => {
 
 function formatFileSize(size)
 {
-    return fileSize(size, {base: 2});
+    return filesize(size, {base: 2});
 }

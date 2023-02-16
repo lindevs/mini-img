@@ -1,6 +1,5 @@
-@import '~bootstrap/scss/bootstrap';
-@import '~dropzone/src/dropzone';
-@import '~@fontsource/roboto';
+@import 'bootstrap';
+@import '@fontsource/roboto';
 
 body {
   font-family: 'Roboto', sans-serif;

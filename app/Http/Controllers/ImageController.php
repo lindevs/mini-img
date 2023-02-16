@@ -10,7 +10,7 @@ use App\Services\ImageOptimizationService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\View\View;
 
-class ImageController extends Controller
+class ImageController
 {
     public function index(): View
     {

@@ -1,26 +1,17 @@
 {
     "private": true,
-    "description": "A web-based application for compressing and optimizing images",
-    "keywords": ["mini-img", "image-compression", "image-optimization"],
-    "license": "Apache-2.0",
     "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "@fontsource/roboto": "^4.5.8",
+        "bootstrap": "^5.2.3",
+        "dropzone": "^5.9.3",
+        "filesize": "^10.0.6"
     },
     "devDependencies": {
-        "@fontsource/roboto": "^4.5.0",
-        "@popperjs/core": "^2.9.3",
-        "bootstrap": "^5.1.0",
-        "dropzone": "^5.9.2",
-        "filesize": "^8.0.0",
-        "laravel-mix": "^6.0.6",
-        "resolve-url-loader": "^4.0.0",
-        "sass": "^1.32.11",
-        "sass-loader": "^11.0.1"
+        "laravel-vite-plugin": "^0.7.4",
+        "vite": "^4.1.1"
     }
 }

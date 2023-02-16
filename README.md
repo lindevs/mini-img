@@ -11,7 +11,7 @@ various command line tools.
 
 MiniImg requires the following packages:
 
-* PHP 8
+* PHP 8.2
 * Apache 2.4
 * Composer
 * Node.js and npm
@@ -134,7 +134,7 @@ APP_DEBUG=false
   * `npm install`
 
 * Compile assets:
-  * `npm run prod`
+  * `npm run build`
 
 * Open browser and navigate to [http://localhost](http://localhost)
 
@@ -165,11 +165,8 @@ APP_DEBUG=false
 * Install npm packages:
   * `npm install`
 
-* Compile assets:
+* Compile assets and watch file changes:
   * `npm run dev`
-
-* Run command if you want automatically recompile your assets when it detects files changes:
-  * `npm run watch`
 
 **Note:** To run commands in Linux requires root or user with sudo privileges.
 
