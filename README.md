@@ -11,7 +11,7 @@ various command line tools.
 
 MiniImg requires the following packages:
 
-* PHP 8.2
+* PHP 8.3
 * Apache 2.4
 * Composer
 * Node.js and npm

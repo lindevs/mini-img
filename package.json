@@ -1,17 +1,18 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build"
     },
     "dependencies": {
-        "@fontsource/roboto": "^4.5.8",
-        "bootstrap": "^5.2.3",
+        "@fontsource/roboto": "^5.0.12",
+        "bootstrap": "^5.3.3",
         "dropzone": "^5.9.3",
-        "filesize": "^10.0.6"
+        "filesize": "^10.1.0"
     },
     "devDependencies": {
-        "laravel-vite-plugin": "^0.7.4",
-        "vite": "^4.1.1"
+        "laravel-vite-plugin": "^1.0.2",
+        "vite": "^5.1.6"
     }
 }
